@@ -1,0 +1,465 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7F526C85-789B-4907-AA3B-48BDDF71E7A3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CardManage</RootNamespace>
+    <AssemblyName>CardManage</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>E:\版本发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug64\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\Release64\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\ComManager.cs" />
+    <Compile Include="Classes\WITPLMMultiSelectTreeView.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="DALFactory\DALFactory.cs" />
+    <Compile Include="Forms\AreaChooseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AreaChooseForm.Designer.cs">
+      <DependentUpon>AreaChooseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BuidingBatchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BuidingBatchForm.Designer.cs">
+      <DependentUpon>BuidingBatchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BuildingManageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BuildingManageForm.Designer.cs">
+      <DependentUpon>BuildingManageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BuildingViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BuildingViewForm.Designer.cs">
+      <DependentUpon>BuildingViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CardLogManageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CardLogManageForm.Designer.cs">
+      <DependentUpon>CardLogManageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CardManageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CardManageForm.Designer.cs">
+      <DependentUpon>CardManageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CardSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CardSearchForm.Designer.cs">
+      <DependentUpon>CardSearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CardViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CardViewForm.Designer.cs">
+      <DependentUpon>CardViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ChangePasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChangePasswordForm.Designer.cs">
+      <DependentUpon>ChangePasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ComManageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ComManageForm.Designer.cs">
+      <DependentUpon>ComManageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CommLogManageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CommLogManageForm.Designer.cs">
+      <DependentUpon>CommLogManageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CommunicationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CommunicationForm.Designer.cs">
+      <DependentUpon>CommunicationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DataBatchDeleteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DataBatchDeleteForm.Designer.cs">
+      <DependentUpon>DataBatchDeleteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DBLinkTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DBLinkTestForm.Designer.cs">
+      <DependentUpon>DBLinkTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DBServerSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DBServerSettingForm.Designer.cs">
+      <DependentUpon>DBServerSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DBSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DBSettingForm.Designer.cs">
+      <DependentUpon>DBSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormBase.Designer.cs">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PingForm.Designer.cs">
+      <DependentUpon>PingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SelChsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SelChsForm.Designer.cs">
+      <DependentUpon>SelChsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SelectBuildingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SelectBuildingForm.Designer.cs">
+      <DependentUpon>SelectBuildingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SetFormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SetFormBase.Designer.cs">
+      <DependentUpon>SetFormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SyncTimeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SyncTimeForm.Designer.cs">
+      <DependentUpon>SyncTimeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SystemSetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SystemSetForm.Designer.cs">
+      <DependentUpon>SystemSetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TreeFormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TreeFormBase.Designer.cs">
+      <DependentUpon>TreeFormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserManageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UserManageForm.Designer.cs">
+      <DependentUpon>UserManageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UserViewForm.Designer.cs">
+      <DependentUpon>UserViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDAL\ISys.cs" />
+    <Compile Include="Logic\DBManager.cs" />
+    <Compile Include="Logic\TreeManager.cs" />
+    <Compile Include="Manager.cs" />
+    <Compile Include="Model\BuidingBatchCondition.cs" />
+    <Compile Include="Model\BuildingCode.cs" />
+    <Compile Include="Model\CardSearchCondition.cs" />
+    <Compile Include="Model\ComboBoxItem.cs" />
+    <Compile Include="Model\DeviceAddress.cs" />
+    <Compile Include="Model\OtherSetting.cs" />
+    <Compile Include="Model\RetryCommand.cs" />
+    <Compile Include="Model\SelecedTreeNodeData.cs" />
+    <Compile Include="Model\SwipingCardData.cs" />
+    <Compile Include="Model\Version.cs" />
+    <Compile Include="SQLServerDAL\Card.cs" />
+    <Compile Include="SQLServerDAL\CardLog.cs" />
+    <Compile Include="SQLServerDAL\CommLog.cs" />
+    <Compile Include="SQLServerDAL\Sys.cs" />
+    <Compile Include="SQLServerDAL\UserInfo.cs" />
+    <Compile Include="DBUtility\DbHelperSQL.cs" />
+    <Compile Include="SQLServerDAL\Building.cs" />
+    <Compile Include="IDAL\IBuilding.cs" />
+    <Compile Include="IDAL\ICard.cs" />
+    <Compile Include="IDAL\ICardLog.cs" />
+    <Compile Include="IDAL\ICommLog.cs" />
+    <Compile Include="IDAL\IUserInfo.cs" />
+    <Compile Include="Logic\CardConfiger.cs" />
+    <Compile Include="Logic\CardMonitor.cs" />
+    <Compile Include="Logic\ConfigerBase.cs" />
+    <Compile Include="Logic\LayoutManager.cs" />
+    <Compile Include="Logic\Package.cs" />
+    <Compile Include="Logic\SysConfiger.cs" />
+    <Compile Include="MDIParent1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIParent1.Designer.cs">
+      <DependentUpon>MDIParent1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Building.cs" />
+    <Compile Include="Model\Card.cs" />
+    <Compile Include="Model\CardData.cs" />
+    <Compile Include="Model\CardLog.cs" />
+    <Compile Include="Model\ComInfo.cs" />
+    <Compile Include="Model\CommLog.cs" />
+    <Compile Include="Model\DBSetting.cs" />
+    <Compile Include="Model\Flag.cs" />
+    <Compile Include="Model\Menu.cs" />
+    <Compile Include="Model\NodeData.cs" />
+    <Compile Include="Model\PParity.cs" />
+    <Compile Include="Model\Setting.cs" />
+    <Compile Include="Model\UserInfo.cs" />
+    <Compile Include="Model\WindowSize.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RunVariable.cs" />
+    <Compile Include="Tools\CMessageBox.cs" />
+    <Compile Include="Tools\CRC32.cs" />
+    <Compile Include="Tools\CRC8.cs" />
+    <Compile Include="Tools\CRC8A.cs" />
+    <Compile Include="Tools\Encrypt.cs" />
+    <Compile Include="Tools\Functions.cs" />
+    <Compile Include="Tools\IniFile.cs" />
+    <Compile Include="Tools\IOHelper.cs" />
+    <Compile Include="Tools\Observer.cs" />
+    <Compile Include="Tools\ScaleConverter.cs" />
+    <EmbeddedResource Include="Forms\AreaChooseForm.resx">
+      <DependentUpon>AreaChooseForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BuidingBatchForm.resx">
+      <DependentUpon>BuidingBatchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BuildingManageForm.resx">
+      <DependentUpon>BuildingManageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BuildingViewForm.resx">
+      <DependentUpon>BuildingViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CardLogManageForm.resx">
+      <DependentUpon>CardLogManageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CardManageForm.resx">
+      <DependentUpon>CardManageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CardSearchForm.resx">
+      <DependentUpon>CardSearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CardViewForm.resx">
+      <DependentUpon>CardViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChangePasswordForm.resx">
+      <DependentUpon>ChangePasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ComManageForm.resx">
+      <DependentUpon>ComManageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CommLogManageForm.resx">
+      <DependentUpon>CommLogManageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CommunicationForm.resx">
+      <DependentUpon>CommunicationForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DataBatchDeleteForm.resx">
+      <DependentUpon>DataBatchDeleteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DBLinkTestForm.resx">
+      <DependentUpon>DBLinkTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DBServerSettingForm.resx">
+      <DependentUpon>DBServerSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DBSettingForm.resx">
+      <DependentUpon>DBSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormBase.resx">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PingForm.resx">
+      <DependentUpon>PingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SelChsForm.resx">
+      <DependentUpon>SelChsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SelectBuildingForm.resx">
+      <DependentUpon>SelectBuildingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SetFormBase.resx">
+      <DependentUpon>SetFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SyncTimeForm.resx">
+      <DependentUpon>SyncTimeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SystemSetForm.resx">
+      <DependentUpon>SystemSetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TreeFormBase.resx">
+      <DependentUpon>TreeFormBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserViewForm.resx">
+      <DependentUpon>UserViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIParent1.resx">
+      <DependentUpon>MDIParent1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="Properties\DataSources\CardManage.Forms.CardViewForm.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="db.sql" />
+    <Content Include="logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

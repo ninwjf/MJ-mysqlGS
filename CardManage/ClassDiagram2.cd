@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CardManage.Forms.AreaChooseForm" Collapsed="true">
+    <Position X="14" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQgASAAABAAAECAAADCAwCAAgQAACAAAAAAAAA=</HashCode>
+      <FileName>Forms\AreaChooseForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CardManage.Forms.BuidingBatchForm" Collapsed="true">
+    <Position X="23" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAACAACCBFABAAAECAQAgCABDEEIAAACAGgAIAgAA=</HashCode>
+      <FileName>Forms\BuidingBatchForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CardManage.Forms.BuildingManageForm" Collapsed="true">
+    <Position X="2.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AJAAAAAAACAAAAAAIACAAAAOACACAQAAgAAAAAAAAAA=</HashCode>
+      <FileName>Forms\BuildingManageForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CardManage.Forms.BuildingViewForm" Collapsed="true">
+    <Position X="36.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAICAICCQEoBAlwECAQAgKQACAiAJAogAOQAAAQAQ=</HashCode>
+      <FileName>Forms\BuildingViewForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CardManage.Forms.CardLogManageForm" Collapsed="true">
+    <Position X="5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAGAAAIAAACCAAAAOAACCAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Forms\CardLogManageForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CardManage.Forms.CardManageForm" Collapsed="true">
+    <Position X="9.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gBAAAAAAAmEAAAAAICCAAAAOACCCAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Forms\CardManageForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CardManage.Forms.CardSearchForm" Collapsed="true">
+    <Position X="16.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAACSCAIBgAAADAARACAQCAxAAAICACAAAAAAg=</HashCode>
+      <FileName>Forms\CardSearchForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CardManage.Forms.CardViewForm" Collapsed="true">
+    <Position X="25.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/wSkek1lKmAAohAkQvGgEABiATqC2oRAECgAFAICEDg=</HashCode>
+      <FileName>Forms\CardViewForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CardManage.Forms.ChangePasswordForm" Collapsed="true">
+    <Position X="27.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAQACAAABBAAACAAAACAACAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Forms\ChangePasswordForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CardManage.Forms.ComManageForm" Collapsed="true">
+    <Position X="38.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EgABAAAAASAAABAAAACAAAACQIAABAEBMAgYABABAAQ=</HashCode>
+      <FileName>Forms\ComManageForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CardManage.Forms.CommLogManageForm" Collapsed="true">
+    <Position X="7.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAACAAAAAAAACAAAACAAACAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Forms\CommLogManageForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CardManage.Forms.CommunicationForm" Collapsed="true">
+    <Position X="50" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAYgAIAGAEAAAAAKCAAAACAgAEUoAAAAAAAAIAABA=</HashCode>
+      <FileName>Forms\CommunicationForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CardManage.Forms.DataBatchDeleteForm" Collapsed="true">
+    <Position X="18.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAwADAAACgIAgAAAQCAABACACCCAAgAICQAAAEAgQA=</HashCode>
+      <FileName>Forms\DataBatchDeleteForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CardManage.Forms.DBLinkTestForm" Collapsed="true">
+    <Position X="33.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>RAQAAAgAACAAKAAEQACAACACAAAAAAAAAAAAAyAAAAA=</HashCode>
+      <FileName>Forms\DBLinkTestForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CardManage.Forms.DBServerSettingForm" Collapsed="true">
+    <Position X="29.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEQACAEABAAgACAAAACAAiAAAAAIAAAAQAAAAA=</HashCode>
+      <FileName>Forms\DBServerSettingForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CardManage.Forms.DBSettingForm" Collapsed="true">
+    <Position X="41" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACiFQACAAABACgACAAAACAAGAAAAAIAAAAQAEAAA=</HashCode>
+      <FileName>Forms\DBSettingForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CardManage.Forms.FormBase" Collapsed="true">
+    <Position X="25.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAQACEAAAAAAQCAQAKCBBAAABCAAAAmAAAAQAA=</HashCode>
+      <FileName>Forms\FormBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CardManage.Forms.LoginForm" Collapsed="true">
+    <Position X="45.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAQACAAABAAAACAAAACAACAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Forms\LoginForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CardManage.Forms.PingForm" Collapsed="true">
+    <Position X="20.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQ5YAAAAGAAIBABAKCAAAACAiCEEIAIACAAAAIAABA=</HashCode>
+      <FileName>Forms\PingForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CardManage.Forms.SelChsForm" Collapsed="true">
+    <Position X="11.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gCQJEAAJBCAAJQEAzEOAVAACAABIQAAAACASABBAQCA=</HashCode>
+      <FileName>Forms\SelChsForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CardManage.Forms.SelectBuildingForm" Collapsed="true">
+    <Position X="32" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEACAACCAEABAAAECIQAgCAACAAAAACAAGAAAAAAA=</HashCode>
+      <FileName>Forms\SelectBuildingForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CardManage.Forms.SetFormBase" Collapsed="true">
+    <Position X="30.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAEAAACAAAACAACAAFAAAAAAAEAAAAA=</HashCode>
+      <FileName>Forms\SetFormBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CardManage.Forms.SyncTimeForm" Collapsed="true">
+    <Position X="43.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAIBAAAACAABACAACAAAAAAAAAQQAAAAA=</HashCode>
+      <FileName>Forms\SyncTimeForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CardManage.Forms.SystemSetForm" Collapsed="true">
+    <Position X="47.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/wCAAiFQCCABQBAijADkAEACAgGoQAgCIAAAAQQJBBA=</HashCode>
+      <FileName>Forms\SystemSetForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CardManage.Forms.TreeFormBase" Collapsed="true">
+    <Position X="5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEYgUA0AgCIAAEBQJ0GAEB4PESASCQBIAAQRBocAAYE=</HashCode>
+      <FileName>Forms\TreeFormBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CardManage.Forms.UserManageForm" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAACAAAAAAIACAAAAOACACAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Forms\UserManageForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CardManage.Forms.UserViewForm" Collapsed="true">
+    <Position X="34.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAACQACAAABBAAACAAAACgACAAABAAAgAAAAAAAE=</HashCode>
+      <FileName>Forms\UserViewForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>
