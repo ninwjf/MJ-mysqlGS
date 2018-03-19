@@ -23,7 +23,7 @@ namespace CardManage
         /// <summary>
         /// 软件版本号
         /// </summary>
-        public const string SoftVersion = "V3.1.2";
+        public const string SoftVersion = "V3.1.3";
 
         /// <summary>
         /// 对话框标题
