@@ -515,7 +515,7 @@ namespace CardManage.Forms
                             if (objDAL.ExistsByWhere(string.Format("CardNo = {0}", objCardData.CardNo)))
                             {
                                 //卡片存在,是否覆盖
-                                if (MessageBox.Show(string.Format("系统中已经存在卡号为[{0}]的卡了,是否覆盖当前卡片?", objCardData.CardNo), objCardData.CardNo.ToString(), MessageBoxButtons.YesNoCancel) != DialogResult.Yes) return;
+                                if (MessageBox.Show(string.Format("系统中已经存在卡号为[{0}]的卡了,是否覆盖当前卡片?", objCardData.CardNo), objCardData.CardNo.ToString(), MessageBoxButtons.YesNo) != DialogResult.Yes) return;
                                 _UpdateFlag = true;
                             }
 
@@ -581,6 +581,15 @@ namespace CardManage.Forms
                             {
                                 cbCardType.SelectedIndex = 0;
                             }
+
+
+
+                            IDAL.ICard objDAL = DALFactory.DALFactory.Card();
+                            var cardlist = objDAL.GetListByWhere(1, string.Format("cardno = {0}", objCardData.CardNo.ToString()));
+
+                            txtContact.Text = cardlist[0].Contact;
+                            txtTel.Text = cardlist[0].Tel;
+                            txtMemo.Text = cardlist[0].Memo;
 
                             cbCHS.Items.Clear();
                             cbCHS.Items.Add(objCardData.listChsInfo[1][0]);

@@ -1,6 +1,6 @@
 ﻿namespace CardManage.Forms
 {
-    partial class SetFormBase
+    partial class SetFormBase : FormBase
     {
         /// <summary>
         /// Required designer variable.

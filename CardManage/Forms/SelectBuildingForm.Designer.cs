@@ -1,6 +1,6 @@
 ﻿namespace CardManage.Forms
 {
-    partial class SelectBuildingForm
+    partial class SelectBuildingForm : SetFormBase
     {
         /// <summary>
         /// 必需的设计器变量。

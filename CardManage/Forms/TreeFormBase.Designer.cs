@@ -1,6 +1,6 @@
 ﻿namespace CardManage.Forms
 {
-    partial class TreeFormBase : FormBase
+    partial class TreeFormBase
     {
         /// <summary>
         /// Required designer variable.

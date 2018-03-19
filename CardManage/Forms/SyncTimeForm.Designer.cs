@@ -1,6 +1,6 @@
 ﻿namespace CardManage.Forms
 {
-    partial class SyncTimeForm
+    partial class SyncTimeForm : SetFormBase
     {
         /// <summary>
         /// 必需的设计器变量。
