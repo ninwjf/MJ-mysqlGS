@@ -839,35 +839,29 @@ namespace CardManage.Forms
         {
             if (this.IfFormLoadOk)
             {
-
-            }
-                /*
-                if (this.IfFormLoadOk)
+                TextBox objTB = (TextBox)sender;
+                if (objTB.Text == "")
+                    return;
+                switch(objTB.Name)
                 {
-                    TextBox objTB = (TextBox)sender;
-                    if (objTB.Text == "")
-                        return;
-                    switch(objTB.Name)
-                    {
-                        case "txtRAreaCode":
-                            _area.SetAreaCode(objTB.Text);
-                            break;
-                        case "txtRBuildCode":
-                            _area.SetBuildCode(objTB.Text);
-                            break;
-                        case "txtRUnitCode":
-                            _area.SetUnitCode(objTB.Text);
-                            break;
-                        case "txtRFloorCode":
-                            _area.SetFloorCode(objTB.Text);
-                            break;
-                        case "txtRRoomCode":
-                            _area.SetRoomCode(objTB.Text);
-                            break;
-                    }
+                    case "txtRAreaCode":
+                        _area.SetAreaCode(objTB.Text);
+                        break;
+                    case "txtRBuildCode":
+                        _area.SetBuildCode(objTB.Text);
+                        break;
+                    case "txtRUnitCode":
+                        _area.SetUnitCode(objTB.Text);
+                        break;
+                    case "txtRFloorCode":
+                        _area.SetFloorCode(objTB.Text);
+                        break;
+                    case "txtRRoomCode":
+                        _area.SetRoomCode(objTB.Text);
+                        break;
                 }
-                */
             }
+        }
 
 
         private void CbCode_SelectedIndexChanged(object sender, EventArgs e)
