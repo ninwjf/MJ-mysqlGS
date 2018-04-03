@@ -839,27 +839,35 @@ namespace CardManage.Forms
         {
             if (this.IfFormLoadOk)
             {
-                TextBox objTB = (TextBox)sender;
-                switch(objTB.Name)
-                {
-                    case "txtRAreaCode":
-                        _area.SetAreaCode(objTB.Text);
-                        break;
-                    case "txtRBuildCode":
-                        _area.SetBuildCode(objTB.Text);
-                        break;
-                    case "txtRUnitCode":
-                        _area.SetUnitCode(objTB.Text);
-                        break;
-                    case "txtRFloorCode":
-                        _area.SetFloorCode(objTB.Text);
-                        break;
-                    case "txtRRoomCode":
-                        _area.SetRoomCode(objTB.Text);
-                        break;
-                }
+
             }
-        }
+                /*
+                if (this.IfFormLoadOk)
+                {
+                    TextBox objTB = (TextBox)sender;
+                    if (objTB.Text == "")
+                        return;
+                    switch(objTB.Name)
+                    {
+                        case "txtRAreaCode":
+                            _area.SetAreaCode(objTB.Text);
+                            break;
+                        case "txtRBuildCode":
+                            _area.SetBuildCode(objTB.Text);
+                            break;
+                        case "txtRUnitCode":
+                            _area.SetUnitCode(objTB.Text);
+                            break;
+                        case "txtRFloorCode":
+                            _area.SetFloorCode(objTB.Text);
+                            break;
+                        case "txtRRoomCode":
+                            _area.SetRoomCode(objTB.Text);
+                            break;
+                    }
+                }
+                */
+            }
 
 
         private void CbCode_SelectedIndexChanged(object sender, EventArgs e)
@@ -919,7 +927,8 @@ namespace CardManage.Forms
             SetComBoBoxSelectedIndex(cbUnitCode, _area.GetUnitCode(), 1);
             SetComBoBoxSelectedIndex(cbFloorCode, _area.GetFloorRoomCode(), 2);
             //获取序列号
-            txtSerialNo.Text = strSerialNo[cbAreaCode.SelectedIndex - 1];
+            if(cbAreaCode.SelectedIndex > 0)
+                txtSerialNo.Text = strSerialNo[cbAreaCode.SelectedIndex - 1];
         }
 
         private void SetComBoBoxSelectedIndex(ComboBox iComboBox, string iStr, int iNo)
